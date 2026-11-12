@@ -1,6 +1,6 @@
 param webAppName string // = uniqueString(resourceGroup().id) // unique String gets created from az cli instructions
 param sku string = 'S1' // The SKU of App Service Plan
-param location string = resourceGroup().location
+param location string = 'northeurope'
 
 var appServicePlanName = toLower('AppServicePlan-${webAppName}')
 
