@@ -1,5 +1,5 @@
 param webAppName string
-param sku string = 'S1' // The SKU of App Service Plan
+param sku string = 'F1' // The SKU of App Service Plan
 param location string = 'eastus'
 
 var appServicePlanName = toLower('AppServicePlan-${webAppName}')
